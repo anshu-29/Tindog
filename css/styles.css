@@ -1,0 +1,210 @@
+/*To be a good programmer our code should be dry-do not repeat yourself
+ includes four steps-
+1. readability
+ 2. Modularity
+ 3. Effeciency
+ 4. Length*/
+
+/*body*/
+/*How to pick and mix selectors-art of combining selectors-
+1.Multiple selectors - ref(line16)- selector1,selector2
+2.Hierarichal Selectors-  selector1(Parent element) selector2(child element){...} It is read from right to left
+3. Combined Selectors- selector1.selector2(class) or selector1#selector2(id) It is read from left to right*/
+
+.body{
+    font-family: Montserrat,sans-serif;
+
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: Montserrat,sans-serif;
+}
+
+p{
+    color: #8f8f8f;
+}
+/*Headings*/
+.big-heading{
+    font-family: Montserrat,serif;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: bolder;
+
+}
+.section-heading{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+/*Containers*/
+.container-fluid {
+    padding: 3% 15% 7%;
+}
+/*Sections*/
+.colored-section{
+    background-color: #ff4c68;
+    color: white;
+}
+.white-section{
+    background-color: white;
+}
+
+
+
+/*Navbar*/
+.navbar{
+    padding: 0 0 4.5rem;
+}
+.navbar-brand{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+
+
+}
+.nav-item{
+    padding: 0 18px;
+}
+.nav-link{
+    font-size: 1.2rem;
+   font-family: Ubuntu, sans-serif;
+
+}
+/*To apply padding or any other attribute to a particular element then it can be done be #section_name .class_name{
+padding:__ __;
+for ex- #title .container-fluid{ (here the space let it reads from right to left as container fluid is a child element of class title but if they are joined then it both of them should have been under the same element to apply
+padding:3% 15%
+
+}*/
+
+/*Title*/
+
+#title{
+
+}
+
+
+/*Buttons*/
+.downloads{
+    margin: 8% 5% 7% 0 ;
+}
+/*title-image*/
+.title-image{
+    width: 60%;
+    transform: rotate(25deg);
+
+
+
+    /*position should be used for the z-index to work */
+}
+/*features*/
+#features{
+    padding: 8% 15%;
+
+
+}
+.sign{
+    color: #ef8172;
+padding-bottom: 5%;
+
+
+
+}
+
+.featured-box{
+    text-align: center;
+    padding:2%;
+}
+.sign:hover{
+    color: #ff4c68;
+}
+.feature-title{
+    font-size: 1.5rem;
+
+}
+/*testimonials*/
+
+#testimonials{
+    padding: 8% 12%;
+    text-align: center;
+
+/*Ids are higher in heirarachy then classes then tags
+Inline styles are of higher priority
+inline styles should be avoided*/
+}
+.dog-img{
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+.carousel-item{
+    padding: 6% 21%;
+}
+.testimonial-text{
+    font-size: 3rem;
+    line-height: 1.5;
+
+}
+
+/*press-section*/
+#press{
+    text-align: center;
+
+    padding: 0 0 5% 0;
+
+}
+.press-logo{
+   margin: 0 20px 20px 50px;
+    width: 15%;
+}
+
+/*Pricing*/
+
+
+#pricing{
+    padding:100px;
+text-align: center;
+}
+.pricing-coloumn{
+    padding: 3% 2%;
+
+}
+.pricing-text{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+
+/*CTA Section*/
+#cta{
+    padding: 8% 15%;
+    text-align: center;
+}
+.cta-heading{
+ font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+.download{
+    margin: 5% 1% 7% 0;
+}
+
+/*Footer*/
+#footer{
+    padding: 7% 15%;
+    text-align: center;
+}
+.social{
+    margin: 20px 10px;
+}
+@media (max-width: 991.21px)  {
+    #title{
+        text-align: center;
+
+    }
+.title-image{
+    position: static;
+    transform: rotate(0);
+}
+
+}
+
